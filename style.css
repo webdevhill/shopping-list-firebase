@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    color: #971761;
+    user-select: none;
+}
+
+.container {
+    max-width: 320px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #8d1797;
+    background: linear-gradient(180deg, rgba(141,23,151,0.7) 0%, rgba(253,187,45,0) 100%);
+    /* background: rgb(181,104,72);
+    background: linear-gradient(0deg, rgba(181,104,72,0.4) 0%, rgba(4,79,74,0.11808473389355745) 100%); */
+}
+
+img {
+    width: 180px;
+    margin: auto;
+    /* #4f0000 */
+}
+
+input {
+    color: #971761;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.);
+}
+
+button {
+    color: #FDFDFD;
+    background-color: #176197;
+    border: 0;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: #089624;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+ul li {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+#shopping-list{
+    font-size: 18px;
+}
+
+ul li:hover{
+    background: #c7e7fe;
+    cursor: pointer;
+}
