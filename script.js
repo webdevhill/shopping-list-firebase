@@ -15,9 +15,9 @@ const shoppingListEl = document.getElementById("shopping-list")
 
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
-    
-    push(shoppingListInDB, inputValue)
-    
+    if((inputValue !== '')){
+        push(shoppingListInDB, inputValue)  
+    }
     clearInputEl()
 })
 
@@ -25,8 +25,9 @@ inputFieldEl.addEventListener('keypress', function(event){
     if (event.key === "Enter") {
         let inputValue = inputFieldEl.value
     
-        push(shoppingListInDB, inputValue)
-        
+        if((inputValue !== '')){
+            push(shoppingListInDB, inputValue)  
+        }
         clearInputEl()
       }
 })
@@ -35,8 +36,6 @@ onValue(shoppingListInDB, function(snapshot) {
     if (snapshot.exists()) {
         let itemsArray = Object.entries(snapshot.val())
     
-        console.log(snapshot.val())
-
         clearShoppingListEl()
         
         for (let i = 0; i < itemsArray.length; i++) {
