@@ -8,16 +8,19 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     color: #971761;
     user-select: none;
+    background: #a8b2d1;
 }
 
-.container {
+.main {
     max-width: 320px;
-    margin: 30px auto;
+    margin: 0px auto 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.7) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.4) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.6) 0px -2px 6px 0px inset;
     padding: 2rem;
     position: absolute;
     top: 50%;
@@ -25,14 +28,13 @@ html, body {
     transform: translate(-50%, -50%);
     background: #8d1797;
     background: linear-gradient(180deg, rgba(141,23,151,0.7) 0%, rgba(253,187,45,0) 100%);
-    /* background: rgb(181,104,72);
+    /* background: rgb(181,104,72);  //***** alt background neutral
     background: linear-gradient(0deg, rgba(181,104,72,0.4) 0%, rgba(4,79,74,0.11808473389355745) 100%); */
 }
 
 img {
     width: 180px;
     margin: auto;
-    /* #4f0000 */
 }
 
 input {
@@ -56,13 +58,14 @@ button {
     border-radius: 8px;
     padding: 15px;
     font-size: 20px;
+    font-weight: 700;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
 }
 
 button:hover {
-    background: #089624;
+    background: #09dc33;
     cursor: pointer;
 }
 
@@ -79,6 +82,7 @@ ul li {
     flex-grow: 1;
     text-align: center;
     font-size: 20px;
+    font-weight: 500;
     padding: 15px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.8);
